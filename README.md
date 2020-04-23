@@ -6,23 +6,28 @@
 3. create a database in your mysql server "create database test" 
 4. Now to run the project start "nodemon server.js" or "node server.js"
 
-- Open Postman Follow The Step by step processes:
+Open Postman Follow The Step by step processes:
 
 - Add new smart device
-- API URL: "http://localhost:3001/device/add"
-- Method: POST
-- Body Params: name (string), room (string)
-
+```
+API URL: "http://localhost:3001/device/add"
+Method: POST
+Body Params: name (string), room (string)
+```
 - List all smart devices
-- API URL:  "http://localhost:3001/device/list"
-- Method: GET
-
+```
+API URL:  "http://localhost:3001/device/list"
+Method: GET
+```
 - Perform an operation on a device 
-- API URL: "http://localhost:3001/device/perform"
-- Method: PUT
-- Body Params: id (number), status (boolean) // true - ON a device, false - OFF a device
-
+```
+API URL: "http://localhost:3001/device/perform"
+Method: PUT
+Body Params: id (number), status (boolean) // true - ON a device, false - OFF a device
+```
 - Remove an installed device 
-- API URL: "http://localhost:3001/device/remove"
-- Method: DELETE
-- Body Params: id (number)
+```
+API URL: "http://localhost:3001/device/remove"
+Method: DELETE
+Body Params: id (number)
+```
